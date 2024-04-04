@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivebellAPI", "Divebell\DivebellAPI.csproj", "{5027D05A-E591-4F09-9C07-23DC672B8EB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5027D05A-E591-4F09-9C07-23DC672B8EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5027D05A-E591-4F09-9C07-23DC672B8EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5027D05A-E591-4F09-9C07-23DC672B8EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5027D05A-E591-4F09-9C07-23DC672B8EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBF47BC1-F5F2-4823-84E5-465E6D23AFBD}
+	EndGlobalSection
+EndGlobal
