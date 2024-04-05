@@ -29,10 +29,14 @@ internal static class ShaderFix {
         }
 
         if(root.TryGetComponent(out Renderer renderer)) {
-            renderer.material.shader = VanillaShaders[renderer.material.shader.name];
+            try {
+                renderer.material.shader = VanillaShaders[renderer.material.shader.name];
 
-            foreach(Material material in renderer.materials) {
-                material.shader = VanillaShaders[renderer.material.shader.name];
+                foreach(Material material in renderer.materials) {
+                    material.shader = VanillaShaders[renderer.material.shader.name];
+                }
+            } catch(Exception ex) {
+                DivebellAPIPlugin.Logger.LogError($"Error occured while fixing shader:\n{ex}");
             }
         }
     }
