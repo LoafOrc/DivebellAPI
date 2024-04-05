@@ -1,5 +1,6 @@
 using BepInEx;
 using BepInEx.Logging;
+using DivebellAPI.Data;
 using DivebellAPI.Loader;
 using DivebellAPI.Patches;
 using HarmonyLib;
@@ -23,10 +24,16 @@ public class DivebellAPIPlugin : BaseUnityPlugin {
         Logger.LogInfo("Fixing shaders for modded maps.");
         ShaderFix.Register();
 
+        Logger.LogInfo("Registering config");
+        DivebellAPIConfig.Init(Config);
+        
+        Logger.LogInfo("Patching");
         Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), MyPluginInfo.PLUGIN_GUID);
-        TestSceneLoader.Init();
 
+        DivebellContent.AddVanillaContent();
+        DivebellBundleLoader.Init();
 
         Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} v{MyPluginInfo.PLUGIN_VERSION} has loaded!");
+        Logger.LogInfo($"{DivebellContent.maps.Count} maps registered");
     }
 }

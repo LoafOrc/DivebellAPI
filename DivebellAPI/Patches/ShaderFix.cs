@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DivebellAPI.Data;
+using Steamworks;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
@@ -15,7 +17,9 @@ internal static class ShaderFix {
         }
 
         SceneManager.sceneLoaded += (scene, __) => {
-            if(scene.name != "DebugScene") return; // todo: actually check these are modded maps
+            if(!DivebellContent.TryGetMapFromSceneName(scene.name, out ModdedMap map)) return;
+            if(map.IsVanilla) return;
+            DivebellAPIPlugin.Logger.LogInfo("Modded map was loaded, fixing shaders.");
 
             foreach(GameObject root in scene.GetRootGameObjects()) {
                 FixShaders(root);
