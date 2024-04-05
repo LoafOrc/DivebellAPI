@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34616.47
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivebellAPI", "Divebell\DivebellAPI.csproj", "{5027D05A-E591-4F09-9C07-23DC672B8EB8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DivebellAPI", "DivebellAPI\DivebellAPI.csproj", "{3DACD45D-FF8D-44D2-8B7E-C0679955AD05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5027D05A-E591-4F09-9C07-23DC672B8EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5027D05A-E591-4F09-9C07-23DC672B8EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5027D05A-E591-4F09-9C07-23DC672B8EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5027D05A-E591-4F09-9C07-23DC672B8EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DACD45D-FF8D-44D2-8B7E-C0679955AD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DACD45D-FF8D-44D2-8B7E-C0679955AD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DACD45D-FF8D-44D2-8B7E-C0679955AD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DACD45D-FF8D-44D2-8B7E-C0679955AD05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
