@@ -22,7 +22,7 @@ internal static class DivebellBundleLoader {
                 continue;
             }
 
-            foreach(ModdedMap map in bundle.LoadAllAssets<ModdedMap>()) {
+            foreach(DivebellMap map in bundle.LoadAllAssets<DivebellMap>()) {
                 DivebellContent.RegisterMap(map);
             }
         }

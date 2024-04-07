@@ -34,6 +34,6 @@ public class DivebellAPIPlugin : BaseUnityPlugin {
         DivebellBundleLoader.Init();
 
         Logger.LogInfo($"{MyPluginInfo.PLUGIN_GUID} v{MyPluginInfo.PLUGIN_VERSION} has loaded!");
-        Logger.LogInfo($"{DivebellContent.maps.Count} maps registered");
+        Logger.LogInfo($"{DivebellContent.LoadedMaps.Count} maps registered");
     }
 }

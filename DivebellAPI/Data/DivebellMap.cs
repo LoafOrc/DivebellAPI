@@ -6,10 +6,14 @@ using UnityEngine.SceneManagement;
 
 namespace DivebellAPI.Data;
 
-[CreateAssetMenu(fileName = "New Modded Map", menuName = "DiveBellAPI/Modded Map")]
-public class ModdedMap : ScriptableObject {
+[CreateAssetMenu(fileName = "New Divebell Map", menuName = "DiveBellAPI/Map")]
+public class DivebellMap : ScriptableObject {
     [field: SerializeField]
     public string SceneName { get; internal set; }
 
     public bool IsVanilla { get; internal set; }
+
+    public static DivebellMap CurrentMap { get; internal set; }
+
+    protected bool IsValid() { return true; }
 }

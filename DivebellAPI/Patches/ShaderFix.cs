@@ -17,7 +17,7 @@ internal static class ShaderFix {
         }
 
         SceneManager.sceneLoaded += (scene, __) => {
-            if(!DivebellContent.TryGetMapFromSceneName(scene.name, out ModdedMap map)) return;
+            if(!DivebellContent.TryGetMapFromSceneName(scene.name, out DivebellMap map)) return;
             if(map.IsVanilla) return;
             DivebellAPIPlugin.Logger.LogInfo("Modded map was loaded, fixing shaders.");
 
